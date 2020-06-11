@@ -23,7 +23,13 @@
 
   h2 {
     @include subHeader;
+    @include scaleHeader;
+    align-self: flex-start;
+    padding: 1rem;
+    padding-bottom: 2rem;
     margin-bottom: 3rem;
+    display: inline-block;
+    border-bottom: 2px solid #fff;
   }
 
   p,

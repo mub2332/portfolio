@@ -11,6 +11,7 @@ import { Switch, Route } from 'react-router-dom';
 function App() {
   return (
     <div className={s.app}>
+      <div className={s.bg} />
       <Nav />
       <div className={s.container}>
         <Switch>
