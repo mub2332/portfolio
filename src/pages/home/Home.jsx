@@ -1,7 +1,11 @@
 import React from "react";
 import s from "./home.module.scss";
 
+import { useHistory } from "react-router-dom";
+
 const Home = () => {
+    const history = useHistory();
+
     return (
         <div className={s.header}>
             <section className={s.headerText}>
@@ -33,7 +37,12 @@ const Home = () => {
                     platforms, <strong>AWS</strong> and <strong>GCP</strong>.
                 </p>
                 <div className={s.center}>
-                    <button className={s.view}>Check out my work</button>
+                    <button
+                        onClick={() => history.push("/projects")}
+                        className={s.view}
+                    >
+                        Check out my work
+                    </button>
                     <button className={s.view}>Download my resume</button>
                 </div>
             </section>

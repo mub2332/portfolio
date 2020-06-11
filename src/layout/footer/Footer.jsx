@@ -6,6 +6,7 @@ import { GithubIcon, LinkedinIcon, GmailIcon } from "../../icons/Icons";
 const Footer = () => {
     return (
         <div className={s.footer}>
+            <h3>Get in touch</h3>
             <ul>
                 <li>
                     <a target="blank" href="https://github.com/mub2332">
