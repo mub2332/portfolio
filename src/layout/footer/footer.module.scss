@@ -1,0 +1,30 @@
+.footer {
+    ul {
+        display: flex;
+        justify-content: center;
+        align-content: flex-end;
+        padding: 3rem;
+
+        color: white;
+        list-style: none;
+
+        li {
+            padding: 1rem;
+            transition: all 0.2s;
+
+            &:hover {
+                cursor: pointer;
+                transform: translateY(-0.5rem);
+            }
+
+            a {
+                position: relative;
+            }
+
+            &:active,
+            &:focus {
+                transform: translateY(0rem);
+            }
+        }
+    }
+}
