@@ -1,111 +1,100 @@
-@import "../../../styles/mixins";
-@import "../../../styles/anim";
+@import '../../styles/mixins';
+@import '../../styles/anim';
 
 .headerText {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-    line-height: 1.6;
+  line-height: 1.6;
 
-    color: #fff;
-    text-transform: uppercase;
+  color: #fff;
+  text-transform: uppercase;
 
-    .title {
-        display: inline-block;
-        letter-spacing: 0.5rem;
-        font-size: 6rem;
-        font-weight: 200;
-        padding-bottom: 2rem;
-        border-bottom: 2px solid rgba(#fff, 0.125);
+  .title {
+    display: inline-block;
+    letter-spacing: 0.5rem;
+    font-size: 6rem;
+    font-weight: 200;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid rgba(#fff, 0.125);
 
-        transition: all 0.2s;
-        transform-origin: center left;
+    @include scaleHeader;
+  }
 
-        &:hover {
-            @include scaleHeader;
-        }
+  .subtitle {
+    @include subHeader;
+    @include scaleHeader;
+
+    &:hover {
+      border: none;
     }
+  }
 
-    .subtitle {
-        @include subHeader;
-        transition: all 0.2s;
-        transform-origin: center left;
-
-        &:hover {
-            @include scaleHeader;
-            border: none;
-        }
-    }
-
-    animation: moveInLeft 1s ease-out;
+  animation: moveInLeft 1s ease-out;
 }
 
 .about {
-    background-color: rgba(#45558d, 0.3);
-    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.4);
-    padding: 5rem;
-    border-radius: 2rem;
+  background-color: rgba(#45558d, 0.3);
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.4);
+  padding: 5rem;
+  border-radius: 2rem;
 
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-    color: #fff;
+  color: #fff;
 
-    animation: moveInBottom 1s ease-out;
+  animation: moveInBottom 1s ease-out;
 
-    .header {
-        @include subHeader;
-        align-self: flex-end;
-        text-transform: uppercase;
+  .header {
+    @include subHeader;
+    align-self: flex-end;
+    text-transform: uppercase;
 
-        padding-bottom: 2rem;
-        border-bottom: 2px solid #fff;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid #fff;
 
-        transition: all 0.2s;
+    @include scaleHeader;
+  }
 
-        &:hover {
-            @include scaleHeader;
-        }
-    }
-
-    .content {
-        margin-top: 6rem;
-        font-size: 2.5rem;
-    }
+  .content {
+    margin-top: 6rem;
+    font-size: 2.5rem;
+  }
 }
 
 .center {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 
-    margin-top: 6rem;
+  margin-top: 6rem;
 
-    .view {
-        background-color: rgba(#5786ff, 0.3);
-        border: none;
-        outline: none;
-        padding: 2rem 3rem;
-        margin-right: 2rem;
-        margin-bottom: 2rem;
-        border-radius: 3rem;
+  .view {
+    background-color: rgba(#5786ff, 0.3);
+    border: none;
+    outline: none;
+    padding: 2rem 3rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 3rem;
 
-        font-size: 2rem;
-        color: #fff;
+    font-size: 2rem;
+    color: #fff;
 
-        transition: all 0.2s;
+    transition: all 0.2s;
 
-        &:hover {
-            cursor: pointer;
-            transform: translateY(-1rem);
+    &:hover {
+      cursor: pointer;
+      transform: translateY(-1rem);
 
-            box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-        }
-
-        &:active,
-        :focus {
-            transform: translateY(0);
-            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-        }
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
     }
+
+    &:active,
+    :focus {
+      transform: translateY(0);
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    }
+  }
 }

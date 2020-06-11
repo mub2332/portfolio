@@ -1,10 +1,21 @@
-@import "../styles/base";
+@import './styles/base';
+
+.app {
+  position: relative;
+  min-height: 100vh;
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(./images/bg.jpg);
+  background-size: cover, cover;
+}
 
 .container {
-    margin: 0 auto;
-    width: 90%;
+  margin: 0 auto;
+  width: 90%;
 
-    @media screen and (min-width: 1200px) {
-        width: 70%;
-    }
+  @media screen and (min-width: 1200px) {
+    width: 70%;
+  }
+
+  padding-bottom: 15rem;
 }

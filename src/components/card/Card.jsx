@@ -1,8 +1,8 @@
-import React from "react";
-import s from "./card.module.scss";
+import React from 'react';
+import s from './card.module.scss';
 
-const Card = () => {
-    return <div className={s.card}></div>;
+const Card = ({ children }) => {
+  return <div className={s.card}>{children}</div>;
 };
 
 export default Card;

@@ -1,8 +1,47 @@
-.card {
-    background-color: rgba(#45558d, 0.3);
-    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.4);
-    padding: 5rem;
-    border-radius: 2rem;
+@import '../../styles/_mixins';
 
-    color: #fff;
+.card {
+  background-color: rgba(#45558d, 0.3);
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.4);
+  padding: 5rem;
+  margin: 3rem 2rem;
+  border-radius: 2rem;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: flex-start;
+  align-content: flex-start;
+
+  color: #fff;
+
+  width: 33%;
+
+  @media screen and (max-width: 750px) {
+    width: 90%;
+  }
+
+  h2 {
+    @include subHeader;
+    margin-bottom: 3rem;
+  }
+
+  p,
+  li {
+    font-size: 2rem;
+    padding: 1rem;
+  }
+
+  li {
+    list-style: none;
+    background-color: #45558d;
+    border-radius: 2rem;
+    padding: 1rem 2rem;
+    margin: 1rem;
+  }
+
+  ul {
+    display: flex;
+    flex-flow: row wrap;
+  }
 }
