@@ -1,12 +1,12 @@
-@import '../../styles/_anim';
+@import "../../styles/_anim";
 
 .cards {
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
 
-  margin-top: 10rem;
-  padding-bottom: 5rem;
+    margin-top: 10rem;
+    padding-bottom: 5rem;
 
-  animation: moveInBottom 1s ease-out;
+    animation: moveInBottom 0.5s ease-out;
 }
