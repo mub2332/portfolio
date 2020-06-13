@@ -1,7 +1,7 @@
 @import "../../styles/_mixins";
 
 .card {
-    background-color: rgba(#45558d, 0.6);
+    background-color: rgba(#010517, 0.7);
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.4);
     padding: 5rem;
     margin: 3rem 2rem;
@@ -40,7 +40,7 @@
 
     li {
         list-style: none;
-        background-color: #45558d;
+        background-color: rgba(#5786ff, 0.3);
         border-radius: 2rem;
         box-shadow: 0 0.5rem 1rem rgba(#000, 0.1);
         padding: 1rem 2rem;

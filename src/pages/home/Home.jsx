@@ -16,26 +16,17 @@ const Home = () => {
                 <h2 className={s.header}>About Me</h2>
                 <p className={s.content}>
                     I have experience in creating full stack web apps using a
-                    variety of web technologies. My preferred tech stack is{" "}
-                    <strong>React</strong>, <strong>Node</strong> and{" "}
-                    <strong>Firebase</strong>, but I've also created apps using{" "}
-                    <strong>Angular</strong>, <strong>Gatsby</strong>,{" "}
-                    <strong>Ionic</strong>, <strong>Spring</strong> and{" "}
-                    <strong>Ruby on Rails</strong>. I've worked with both SQL
-                    and NoSQL databases, including <strong>MySQL</strong>,{" "}
-                    <strong>PostgreSQL</strong> and <strong>MongoDB</strong>, as
-                    well as ORMs like <strong>Mongoose</strong> and{" "}
-                    <strong>Sequelize</strong>. I'm also proficient with two
-                    major cloud platforms, <strong>AWS</strong> and{" "}
-                    <strong>GCP</strong>.
+                    variety of web technologies. I consider myself to be
+                    language agnostic, and am used to learning a new language or
+                    framework on the job.
                     <br />
-                    <br />I consider myself to be language agnostic. I can pick
-                    up a language or framework and become productive with it in
-                    short order. I'm usually upskilling myself in emerging
-                    technologies, such as <strong>PWAs</strong>,{" "}
-                    <strong>GraphQL</strong> and{" "}
-                    <strong>hybrid-native mobile apps</strong> created using web
-                    technologies.
+                    <br />I like to upskill myself regularly with emerging
+                    technologies such as PWAs, GraphQL, Natural Language
+                    Processing and hybrid-native mobile app development using
+                    web technologies. As a software developer, I believe in
+                    continuously improving myself, as I believe that in this
+                    profession, lifelong learning is an inescapable part of the
+                    lifestyle.
                 </p>
                 <div className={s.center}>
                     <button
