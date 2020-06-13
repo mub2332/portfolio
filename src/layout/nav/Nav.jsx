@@ -14,7 +14,7 @@ const Nav = () => {
                                 color: "#c8a2c8",
                                 borderBottom: "2px solid #c8a2c8",
                             }}
-                            to="/"
+                            to="/portfolio"
                         >
                             Home
                         </NavLink>
