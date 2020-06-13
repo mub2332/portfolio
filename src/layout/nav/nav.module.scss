@@ -1,41 +1,57 @@
-@import "../../styles/mixins";
-@import "../../styles/anim";
+@import '../../styles/mixins';
+@import '../../styles/anim';
 
 .navContainer {
-    padding: 4rem 2rem 0 2rem;
+  padding: 4rem 2rem 0 2rem;
+
+  position: sticky;
+  top: 0;
+  right: 0;
+  width: 95%;
+  height: 5rem;
+
+  transition: all 0.5s;
+}
+
+.transparentNav {
+  background: linear-gradient(to bottom, rgba(#010517, 0.8), transparent);
+}
+
+.opaqueNav {
+  background: rgba(#010517, 1);
 }
 
 .nav {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 
-    list-style: none;
-    font-size: 2rem;
+  list-style: none;
+  font-size: 2rem;
 
-    justify-content: flex-end;
+  justify-content: flex-end;
 
-    animation: fadeIn 1s ease-in;
+  animation: fadeIn 1s ease-in;
 
-    li {
-        a:link,
-        a:visited {
-            text-decoration: none;
-            color: #fff;
+  li {
+    a:link,
+    a:visited {
+      text-decoration: none;
+      color: #fff;
 
-            margin-right: 2rem;
-            padding-bottom: 1rem;
+      margin-right: 2rem;
+      padding-bottom: 1rem;
 
-            border-bottom: 2px solid transparent;
-            transition: all 0.2s;
-        }
-
-        a:hover,
-        a:active {
-            color: #c8a2c8;
-            border-bottom: 2px solid #c8a2c8;
-            cursor: pointer;
-        }
+      border-bottom: 2px solid transparent;
+      transition: all 0.2s;
     }
 
-    animation: moveInRight 0.5s ease-out;
+    a:hover,
+    a:active {
+      color: #c8a2c8;
+      border-bottom: 2px solid #c8a2c8;
+      cursor: pointer;
+    }
+  }
+
+  animation: moveInRight 0.5s ease-out;
 }
