@@ -1,7 +1,6 @@
 import React from 'react';
 import s from './projects.module.scss';
 import Card from './Card';
-import seraph from '../../images/seraph.png';
 import glipher from '../../images/glipher.png';
 import hwa from '../../images/hwa.png';
 
@@ -19,7 +18,12 @@ const projectData = [
     title: 'Monash HWA Calculator',
     description:
       'A Chrome extension to help honors students calculate their honors weighted average mark easily',
-    links: [{ text: 'View Code', url: 'https://github.com/mub2332/glipher' }],
+    links: [
+      {
+        text: 'View Code',
+        url: 'https://github.com/mub2332/monash-hwa-calculator',
+      },
+    ],
     tags: ['jQuery'],
   },
 ];
