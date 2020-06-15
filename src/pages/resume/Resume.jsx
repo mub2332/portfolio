@@ -4,7 +4,6 @@ import 'react-pdf/dist/Page/AnnotationLayer.css';
 
 import resume from './resume.pdf';
 import s from './resume.module.scss';
-import { Link } from 'react-router-dom';
 
 const Resume = () => {
   const download = () => {
@@ -21,14 +20,13 @@ const Resume = () => {
       <Document
         renderMode={'svg'}
         className={s.container}
-        loading={'Loading...'}
         file={resume}
         onLoadError={console.error}
       >
         <Page
           renderAnnotationLayer={false}
           className={s.page}
-          width={window.innerWidth * 0.8}
+          width={window.innerWidth * 0.7}
           renderMode="svg"
           pageNumber={1}
         />
