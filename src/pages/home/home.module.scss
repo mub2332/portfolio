@@ -60,6 +60,7 @@
 
   .content {
     margin-top: 6rem;
+    margin-bottom: 6rem;
     font-size: 2.5rem;
   }
 }
@@ -71,31 +72,7 @@
 
   margin-top: 6rem;
 
-  .view {
-    background-color: rgba(#5786ff, 0.6);
-    border: none;
-    outline: none;
-    padding: 2rem 3rem;
-    margin-right: 2rem;
-    margin-bottom: 2rem;
-    border-radius: 3rem;
-
-    font-size: 2rem;
-    color: #fff;
-
-    transition: all 0.2s;
-
-    &:hover {
-      cursor: pointer;
-      transform: translateY(-1rem);
-
-      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-    }
-
-    &:active,
-    :focus {
-      transform: translateY(0);
-      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-    }
+  .button {
+    @include primaryButton;
   }
 }

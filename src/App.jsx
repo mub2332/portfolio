@@ -1,7 +1,7 @@
 import React from 'react';
 import s from './app.module.scss';
 import Home from './pages/home/Home';
-import Skills from './pages/skills/Skills';
+import Resume from './pages/resume/Resume';
 import Projects from './pages/projects/Projects';
 import Nav from './layout/nav/Nav';
 import Footer from './layout/footer/Footer';
@@ -17,7 +17,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/portfolio" component={Home} />
-          <Route exact path="/portfolio/skills" component={Skills} />
+          <Route exact path="/portfolio/resume" component={Resume} />
           <Route exact path="/portfolio/projects" component={Projects} />
         </Switch>
       </div>

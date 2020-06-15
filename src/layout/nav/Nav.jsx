@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import s from './nav.module.scss';
 import { NavLink } from 'react-router-dom';
-import { useRef } from 'react';
 
 const Nav = () => {
   const [styles, setStyles] = useState('transparent');
@@ -51,9 +50,9 @@ const Nav = () => {
                 color: '#c8a2c8',
                 borderBottom: '2px solid #c8a2c8',
               }}
-              to="/portfolio/skills"
+              to="/portfolio/resume"
             >
-              Skills
+              Resume
             </NavLink>
           </li>
           <li>
