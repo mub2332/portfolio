@@ -1,33 +1,26 @@
-@import '../../styles/_anim';
-@import '../../styles/_mixins';
+@import "../../styles/_anim";
+@import "../../styles/_mixins";
 
 .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin: 10rem 0 5rem 0;
+    margin-top: 10rem;
 
-  position: relative;
-
-  .absBottom {
-    position: absolute;
-    bottom: 0;
-    left: 10%;
-  }
-
-  animation: moveInBottom 1s ease-out;
+    animation: moveInBottom 1s ease-out;
 }
 
 .center {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 
-  button {
-    @include primaryButton;
-  }
+    button {
+        @include primaryButton;
+    }
 
-  margin-bottom: 10rem;
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    margin-bottom: 5rem;
 }
