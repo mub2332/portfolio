@@ -1,78 +1,78 @@
-@import '../../styles/mixins';
-@import '../../styles/anim';
+@import "../../styles/mixins";
+@import "../../styles/anim";
 
 .headerText {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 
-  line-height: 1.6;
+    line-height: 1.6;
 
-  color: #fff;
-  text-transform: uppercase;
+    color: #fff;
+    text-transform: uppercase;
 
-  .title {
-    display: inline-block;
-    letter-spacing: 0.5rem;
-    font-size: 6rem;
-    font-weight: 200;
-    padding-bottom: 2rem;
-    border-bottom: 2px solid rgba(#fff, 0.125);
+    .title {
+        display: inline-block;
+        letter-spacing: 0.5rem;
+        font-size: 6rem;
+        font-weight: 200;
+        padding-bottom: 2rem;
+        border-bottom: 2px solid rgba(#fff, 0.125);
 
-    @include scaleHeader;
-  }
-
-  .subtitle {
-    @include subHeader;
-    @include scaleHeader;
-
-    &:hover {
-      border: none;
+        @include scaleHeader;
     }
-  }
 
-  animation: moveInLeft 0.5s ease-out;
+    .subtitle {
+        @include subHeader;
+        @include scaleHeader;
+
+        &:hover {
+            border: none;
+        }
+    }
+
+    animation: moveInLeft 0.5s ease-out;
 }
 
 .about {
-  background-color: rgba(#010517, 0.7);
-  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.4);
-  padding: 5rem;
-  border-radius: 2rem;
+    background-color: rgba(#040d3c, 0.7);
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.4);
+    padding: 5rem;
+    border-radius: 2rem;
 
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 
-  color: #fff;
+    color: #fff;
 
-  animation: moveInBottom 0.5s ease-out;
+    animation: moveInBottom 0.5s ease-out;
 
-  .header {
-    @include subHeader;
-    align-self: flex-end;
-    text-transform: uppercase;
+    .header {
+        @include subHeader;
+        align-self: flex-end;
+        text-transform: uppercase;
 
-    padding: 1rem;
-    padding-bottom: 2rem;
-    border-bottom: 2px solid #fff;
+        padding: 1rem;
+        padding-bottom: 2rem;
+        border-bottom: 2px solid #fff;
 
-    @include scaleHeader;
-  }
+        @include scaleHeader;
+    }
 
-  .content {
-    margin-top: 6rem;
-    margin-bottom: 6rem;
-    font-size: 2.5rem;
-  }
+    .content {
+        margin-top: 6rem;
+        margin-bottom: 6rem;
+        font-size: 2.5rem;
+    }
 }
 
 .center {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 
-  margin-top: 6rem;
+    margin-top: 6rem;
 
-  .button {
-    @include primaryButton;
-  }
+    .button {
+        @include primaryButton;
+    }
 }
