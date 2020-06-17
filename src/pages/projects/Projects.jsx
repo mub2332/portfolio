@@ -11,7 +11,7 @@ const projectData = [
     description:
       'A Chrome extension to clip sections of YouTube videos and create animated GIFs from them',
     links: [{ text: 'View Code', url: 'https://github.com/mub2332/glipher' }],
-    tags: ['jQuery', 'AWS', 'Serverless'],
+    tags: ['jQuery', 'AWS Lambda', 'API Gateway'],
   },
   {
     image: hwa,
