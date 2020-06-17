@@ -19,7 +19,7 @@ const Resume = () => {
         <img className={s.image} src={resumeImage} alt="Resume" />
       </div>
       <div className={s.center}>
-        <button onClick={download}>Download my Resume</button>
+        <button onClick={download}>Download</button>
       </div>
     </div>
   );
