@@ -1,11 +1,7 @@
 import React from 'react';
 import s from './home.module.scss';
 
-import { useHistory } from 'react-router-dom';
-
 const Home = () => {
-  const history = useHistory();
-
   return (
     <div className={s.header}>
       <section className={s.headerText}>

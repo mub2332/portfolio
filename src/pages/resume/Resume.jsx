@@ -1,28 +1,28 @@
-import React, { useState } from "react";
-import resumeImage from "../../images/resume.png";
-import resume from "./resume.pdf";
-import s from "./resume.module.scss";
+import React, { useState } from 'react';
+import resumeImage from '../../images/resume.png';
+import resume from './resume.pdf';
+import s from './resume.module.scss';
 
 const Resume = () => {
-    const download = () => {
-        const link = document.createElement("a");
-        link.href = resume;
-        link.download = "Resume.pdf";
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-    };
+  const download = () => {
+    const link = document.createElement('a');
+    link.href = resume;
+    link.download = 'Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
 
-    return (
-        <div className={s.container}>
-            <div className={s.center}>
-                <img className={s.image} src={resumeImage} />
-            </div>
-            <div className={s.center}>
-                <button onClick={download}>Download my resume</button>
-            </div>
-        </div>
-    );
+  return (
+    <div className={s.container}>
+      <div className={s.center}>
+        <img className={s.image} src={resumeImage} alt="Resume" />
+      </div>
+      <div className={s.center}>
+        <button onClick={download}>Download my resume</button>
+      </div>
+    </div>
+  );
 };
 
 export default Resume;
