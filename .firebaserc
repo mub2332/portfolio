@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "personal-67657"
+  },
+  "targets": {
+    "personal-67657": {
+      "hosting": {
+        "mubtasim-mahmud": [
+          "build"
+        ]
+      }
+    }
+  }
+}
