@@ -18,7 +18,7 @@
 .card {
     background-color: rgba(#010517, 0.7);
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.4);
-    border-radius: 2rem;
+    border-radius: 1rem;
 
     display: flex;
     flex-direction: column;
@@ -26,10 +26,11 @@
 
     width: 100%;
     color: #fff;
+    overflow: hidden;
 
     .image {
         width: 100%;
-        overflow: hidden;
+        object-fit: cover;
     }
 
     .content {
