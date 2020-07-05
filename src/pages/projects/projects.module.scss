@@ -15,6 +15,12 @@
     animation: moveInRight 1s ease-out;
 }
 
+.fullRow {
+    @media screen and (min-width: 1080px) {
+        grid-column: span 2;
+    }
+}
+
 .card {
     background-color: rgba(#010517, 0.7);
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.4);
@@ -30,7 +36,9 @@
 
     .image {
         width: 100%;
+        max-height: 30rem;
         object-fit: cover;
+        object-position: top;
     }
 
     .content {
