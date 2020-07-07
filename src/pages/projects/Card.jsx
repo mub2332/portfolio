@@ -19,6 +19,7 @@ const Card = ({ title, description, image, links, tags, fullRow }) => {
                     ))}
                 </ul>
             </div>
+            <hr />
             <div className={s.actions}>
                 {links.map((link) => (
                     <button
