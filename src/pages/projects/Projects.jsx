@@ -46,13 +46,9 @@ const projectData = [
 const Projects = () => {
   return (
     <div className={s.container}>
-      {projectData.map((project, index) => {
-        if (projectData.length % 2 !== 0 && index === 0) {
-          return <Card fullRow={true} {...project} />;
-        } else {
-          return <Card {...project} />;
-        }
-      })}
+      {projectData.map((project) => (
+        <Card {...project} />
+      ))}
     </div>
   );
 };
