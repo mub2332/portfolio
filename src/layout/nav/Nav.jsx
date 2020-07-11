@@ -40,7 +40,7 @@ const Nav = () => {
                             }}
                             to="/"
                         >
-                            Home
+                            About Me
                         </NavLink>
                     </li>
                     <li>
@@ -50,9 +50,9 @@ const Nav = () => {
                                 color: "#c8a2c8",
                                 borderBottom: "2px solid #c8a2c8",
                             }}
-                            to="/resume"
+                            to="/experience"
                         >
-                            Resume
+                            My Experience
                         </NavLink>
                     </li>
                     <li>
@@ -62,9 +62,9 @@ const Nav = () => {
                                 color: "#c8a2c8",
                                 borderBottom: "2px solid #c8a2c8",
                             }}
-                            to="/projects"
+                            to="/work"
                         >
-                            Projects
+                            My Work
                         </NavLink>
                     </li>
                 </ul>
