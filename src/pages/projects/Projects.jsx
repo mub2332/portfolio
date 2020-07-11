@@ -8,7 +8,7 @@ import glipherWeb from "../../images/glipher-web.png";
 const projectData = [
     {
         image: glipherWeb,
-        title: "Glipher (Web App)",
+        title: "Glipher (Web)",
         description:
             "An application that clips sections of YouTube videos and creates animated GIFs from them",
         links: [
@@ -22,7 +22,7 @@ const projectData = [
     },
     {
         image: glipher,
-        title: "Glipher (Extension)",
+        title: "Glipher (Chrome)",
         description:
             "A Chrome extension to clip sections of YouTube videos and create animated GIFs from them",
         links: [
