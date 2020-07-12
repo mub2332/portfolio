@@ -14,12 +14,15 @@ const Resume = () => {
   };
 
   return (
-    <div className={s.container}>
-      <div className={s.center}>
-        <img className={s.image} src={resumeImage} alt="Resume" />
-      </div>
-      <div className={s.center}>
-        <button onClick={download}>Download</button>
+    <div className={s.animate}>
+      <h1 className={s.title}>My Resume</h1>
+      <div className={s.container}>
+        <div className={s.center}>
+          <img className={s.image} src={resumeImage} alt="Resume" />
+        </div>
+        <div className={s.center}>
+          <button onClick={download}>Download</button>
+        </div>
       </div>
     </div>
   );
